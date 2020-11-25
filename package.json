@@ -1,0 +1,24 @@
+{
+  "name": "Travelogue-App",
+  "version": "1.0.0",
+  "description": "Final project - using HTML, CSS, BootStrap, JavaScript &amp; Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elza-s/Travelogue-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elza-s/Travelogue-App/issues"
+  },
+  "homepage": "https://github.com/elza-s/Travelogue-App#readme",
+  "dependencies": {
+    "leaflet": "^1.7.1"
+  }
+}

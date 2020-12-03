@@ -26,7 +26,14 @@ navigator.geolocation.getCurrentPosition(
       const lng = mapE.latlng.lng;
 
       L.marker([lat, lng]).addTo(map)
-        .bindPopup('Been Here!')
+        .bindPopup(L.popup({
+          maxHeight: 400,
+          minWidth: 100,
+          autoClose: false,
+          closeOnClick: false,
+
+        }))
+        .setPopupContent(`Been Here!`)
         .openPopup();
     })
   },

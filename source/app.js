@@ -30,7 +30,7 @@ navigator.geolocation.getCurrentPosition(
           maxHeight: 400,
           minWidth: 100,
           autoClose: false,
-          closeOnClick: false,
+          closeOnClick: false
 
         }))
         .setPopupContent(`Been Here!`)

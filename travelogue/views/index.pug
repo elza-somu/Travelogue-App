@@ -1,5 +1,31 @@
-extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+ // Leaflet map
+html
+  head
+  body
+    .row
+      .col-8
+        #mapid(style='height: 600px')
+      .col-4
+        form.row.form.hidden
+          .form-group.col-6
+            label.form-control-sm(for='travelInput') Date
+            input.form-control.form-control-sm.date(type='text' placeholder='10 August 2010')
+          .form-group.col-6
+            label.form-control-sm(for='travelInput')  Place Visited
+            input.form-control.form-control-sm.place(type='text' placeholder='Switzerland')
+          .form-group.col
+            label.form-control-sm(for='travelInput') Description
+            input#travelInput.form-control.description(rows='2')
+          .form-group.col-10
+            button.btn.btn-primary(type='submit') Ok
+        //
+          <div class="col travelData">
+          </div>
+    footer
+      span Coded by Elza
+    // Bootstrap JS
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js' integrity='sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj' crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx' crossorigin='anonymous')
+    // Javascript file
+    script(src='../app.js')

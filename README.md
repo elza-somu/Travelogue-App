@@ -1,6 +1,8 @@
 # Travelogue-App
 
-!Final project - using HTML, CSS, BootStrap, JavaScript & Node.js@@
+Final project - using HTML, CSS, BootStrap, JavaScript & Node.js
+
+[Live Demo](https://www.google.com)
 
 ## Introduction
 The Travelogue is an app which allows you to pin your travels and have a visual representation of the places you visited.

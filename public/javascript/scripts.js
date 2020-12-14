@@ -1,3 +1,5 @@
+// const DefaultLogs = require('/');
+
 // Selection of form inputs
 let form = document.querySelector('.form');
 let date = document.querySelector('.date');
@@ -51,7 +53,7 @@ form.addEventListener('submit', function (e) {
   }
   travel = { coords, newDate, newPlace, newDescription };
 
-  let html = `
+  let html =  `
       <p class = "row">Visited ${travel.newPlace} on ${travel.newDate}</p>
   `
   form.insertAdjacentHTML('afterend', html);

@@ -11,13 +11,14 @@
     "type": "git",
     "url": "git+https://github.com/elza-s/Travelogue-App.git"
   },
-  "author": "",
+  "author": "Elza Somu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/elza-s/Travelogue-App/issues"
   },
   "homepage": "https://github.com/elza-s/Travelogue-App#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.7",

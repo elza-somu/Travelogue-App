@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1 #{title}
+  form(method = 'POST', action= '/logs/add').row.form
+        .form-group.col-6
+          label.form-control-sm(for='travelInput') Date
+          input.form-control.form-control-sm.date(type='date' placeholder='2011-08-19')
+        .form-group.col-6
+          label.form-control-sm(for='travelInput')  Place Visited
+          input.form-control.form-control-sm.place(type='text' placeholder='Switzerland')
+        .form-group.col
+          label.form-control-sm(for='travelInput') Description
+          input#travelInput.form-control.description(rows='4')
+        .form-group.col-10
+          button.btn.btn-primary(type='submit', value = 'Submit') 

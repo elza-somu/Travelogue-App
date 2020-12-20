@@ -3,7 +3,7 @@ extends layout
 block content
   .row
     .col-8
-      #mapid(style='height: 600px')
+      #mapid(style='height: 670px')
     .col-4.travels
       form(method= 'POST', action= '/').row.form.hidden
         .form-group.col-6
@@ -17,7 +17,4 @@ block content
           textarea#travelInput.form-control.description(rows='4' name= 'description')
         .form-group.col-12
           button.btn.btn-primary(type='submit') Submit
-
-      
-
-
+    

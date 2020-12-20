@@ -43,10 +43,12 @@ navigator.geolocation.getCurrentPosition(
 
     coords = [latitude, longitude];
     map = L.map('mapid').setView(coords, 9);
+    
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);  
 
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    searchCity();
 
     // Brings forward input form
     map.on('click', function (mapE) {
@@ -55,11 +57,34 @@ navigator.geolocation.getCurrentPosition(
       date.focus();
     })
   },
+  
   function () {
-    alert(`Current location unavailable!`)
+    // alert(`Current location unavailable!`)
+    map = L.map('mapid').setView([51.0447, -114.0719], 9);
+    
+    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map); 
+
+    searchCity();
   }
 )
 
+function searchCity(){
+    var arcgisOnline = L.esri.Geocoding.arcgisOnlineProvider();
+
+    L.esri.Geocoding.geosearch({
+      providers: [
+        arcgisOnline,
+        L.esri.Geocoding.mapServiceProvider({
+          label: 'States and Counties',
+          url: 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/Census/MapServer',
+          layers: [2, 3],
+          searchFields: ['NAME', 'STATE_NAME']
+        })
+      ]
+    }).addTo(map);
+}
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();

@@ -2,7 +2,7 @@
 
 Final project - using HTML, CSS, BootStrap, JavaScript & Node.js
 
-[Live Demo](https://www.google.com)
+[Live Demo](https://trave-logue.herokuapp.com/)
 
 ## Introduction
 

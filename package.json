@@ -19,10 +19,15 @@
   "homepage": "https://github.com/elza-s/Travelogue-App#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.3",
     "express": "^4.17.1",
+    "leaflet": "^1.7.1",
     "mongodb": "^3.6.3",
     "mongoose": "^5.11.7",
     "nodemon": "^2.0.6",
     "pug": "^3.0.0"
+  },
+  "engines": {
+    "node": "14.15.1"
   }
 }

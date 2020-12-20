@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const port = 3000;
 
 // Public Folders route
 app.use(express.static(path.join(__dirname, 'public')));
@@ -24,6 +23,4 @@ app.get('/', function(req, res){
 
 
 
-app.listen(port, function(){
-  console.log(`Server running on port ${port}`);
-});
+app.listen(process.env.PORT || 5000);

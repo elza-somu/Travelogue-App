@@ -16,11 +16,8 @@ app.get('/', function(req, res){
   
   res.render('index', {
       title:'Travelogue', 
-    
     });
   }
 );
-
-
 
 app.listen(process.env.PORT || 5000);

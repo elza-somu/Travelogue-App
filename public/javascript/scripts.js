@@ -84,10 +84,12 @@ form.addEventListener('submit', function (e) {
 
   if (newDate === '') {
     alert("Please enter a Date")
+    return;
   }
 
   if (newPlace === '') {
     alert("Please enter a Location")
+    return;
   }
 
 

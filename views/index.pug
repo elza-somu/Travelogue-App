@@ -2,9 +2,9 @@ extends layout
 
 block content
   .row
-    .col-8
+    .col-sm-8
       #mapid(style='height: 670px')
-    .col-4.travels
+    .col-sm-4.travels
       form(method= 'POST', action= '/').row.form.hidden
         .form-group.col-6
           label.form-control-sm(for='travelInput') Date

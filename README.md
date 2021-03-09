@@ -6,7 +6,7 @@ Final project - using HTML, CSS, BootStrap, JavaScript & Node.js
 
 ## Introduction
 
-The Travelogue is an app which allows you to pin your travels and have a visual representation of the places you visited.
+The Travelogue is an app which allows you to pin your travels and have a visual representation of the places you visited. The Leaflet Library has been used extensively to pull together the map information to allow users to move through locations or to be able to search for the location they desire.
 
 ## Technologies Used
 

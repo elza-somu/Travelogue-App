@@ -10,6 +10,18 @@ let mapEvent;
 let html;
 // let travel = {};
 
+class App{
+  constructor(){
+
+  }
+  _getPosition(){
+
+  }
+  _mapLoad(){
+    
+  }
+}
+
 // Acquiring current location
 navigator.geolocation.getCurrentPosition(
   function (position) {

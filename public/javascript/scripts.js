@@ -10,12 +10,8 @@ let mapEvent;
 let html;
 // let travel = {};
 
-class App{
-  constructor(){
 
-  }
-  _getPosition(){
-    // Acquiring current location
+// Acquiring current location
 navigator.geolocation.getCurrentPosition(
   function (position) {
     const latitude = position.coords.latitude;
@@ -37,18 +33,6 @@ navigator.geolocation.getCurrentPosition(
     showForm();
 
   },
-
-  }
-  _mapLoad(){
-    
-  }
-
-  _showForm(){
-
-  }
-}
-
-
 
   function () {
     // alert(`Current location unavailable!`)

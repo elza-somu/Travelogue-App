@@ -16,8 +16,12 @@ class App{
   }
   _getPosition(){
     // Acquiring current location
-navigator.geolocation.getCurrentPosition(
-  function (position) {
+navigator.geolocation.getCurrentPosition()
+  
+
+  }
+  _mapLoad(){
+    function (position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
@@ -37,9 +41,6 @@ navigator.geolocation.getCurrentPosition(
     showForm();
 
   },
-
-  }
-  _mapLoad(){
     
   }
 

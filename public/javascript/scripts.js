@@ -21,7 +21,7 @@ navigator.geolocation.getCurrentPosition()
 
   }
   _mapLoad(){
-    function (position) {
+    function(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
@@ -40,7 +40,7 @@ navigator.geolocation.getCurrentPosition()
     searchCity();
     showForm();
 
-  },
+  }
     
   }
 

@@ -67,7 +67,7 @@ navigator.geolocation.getCurrentPosition()
     searchCity();
     showForm();
   }
-)
+
 
 function searchCity(){
     var arcgisOnline = L.esri.Geocoding.arcgisOnlineProvider();
